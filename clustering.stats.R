@@ -50,7 +50,8 @@ output[is.num] <- lapply(output[is.num], round, 2)
 output
 }
 
-# I am capping the maximum amout of clusters by 5
+# I am capping the maximum amout of clusters by 7
+# but for sure, we can do more
 # I want to choose a reasonable number, based on which I will be able to see basic differences between customer groups
 
 stats.df.divisive <- cstats.table(gower.dist, divisive.clust, 7)
